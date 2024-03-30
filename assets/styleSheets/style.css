@@ -4,6 +4,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/* adding style on the buttons */
 .btnStyle{
     padding: 0.5rem 1.7rem;
     font-size: 18px;
@@ -17,6 +18,10 @@
     font-size: 19px;
     font-weight: 500;
     opacity: 0.9;
+}
+
+.fontSize50px{
+    font-size: 50px;
 }
 
 .fontColorGrey{
@@ -35,25 +40,6 @@
     transition: 0.5s;
 }
 
-.nav-item:hover > .navItemUnderLine{
-    width: 100%;
-    background-color: #424e5b;
-}
-
-.navLeaf:hover{
-    animation: shake 0.4s ease-in-out;
-    cursor: pointer;
-}
-
-@keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(-10deg); }
-    50% { transform: rotate(10deg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(5deg); }
-}
-
-
 /* styling for the first container balanceYourBodyAndMind */
 .headingsFontSize{
     font-size: 4.2rem !important;
@@ -67,18 +53,21 @@
     background-size: 20% 17%, auto auto, 5.3%, auto auto;
 }
 
-.balanceYourBodyAndMindText{
-    width: 45%;
+.balanceYourBodyAndMindText,.yogaBreatingAndPranayamText,.yogaTrainingVideoShowReelText{
+    width: 46% !important;
 }
 
 .balanceYourBodyAndMindImg{
-    width: 47%;
+    width: 47% !important;
 }
 
 .balanceYourBodyContainerWomenImg{
     transform: translate(-7%,0);
 }
 
+.joinNowText > button{
+    padding: 0.5rem 2.6rem !important;
+}
 
 /* this is to style the second container which is various programs for the pregnant women */
 .pregnantWomenProgram{
@@ -86,4 +75,134 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 6rem 0 9rem 0;
+}
+
+.yogaBreatingAndPranayam{
+    padding: 6rem 0;
+}
+
+.joinNowContainer{
+    padding: 6rem 0;
+    background-image: url(../images/joinUsNowImg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.galeryCards{
+    width: 28.5%;
+    box-shadow: #ccc9c9 5px 7px 20px 0px;
+    overflow: hidden;
+}
+
+.galeryCards > .card{
+    border-radius: 0 !important;
+}
+
+/* adding drop shadow on the image */
+.yogaTrainingVideoShowReelImg{
+    filter: drop-shadow(11px 14px 20px rgba(24, 24, 23,0.7));
+}
+
+.socialMediaIconsBox{
+    background-color: #424e5b;
+}
+
+.fbIcon{
+    padding: 3px 11px 4.5px 11px !important;
+}
+
+.instaIcon{
+    padding: 2.5px 4.4px 4.5px 5.2px !important;
+}
+
+.twitterIcon{
+    padding: 3px 6px 4.5px 5px !important;
+}
+
+.yogaTrainingVideoShowReel{
+    padding: 8rem 0;
+    background-color: #eecdc7;
+}
+
+textarea{
+    resize: none;
+}
+
+.formInputStyle{
+    background-color: #eff0ef;
+    border: 1.5px solid #b7b8b7 !important;
+    font-size: 18.4px;
+    padding: 11px 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* these are the hover effects and animations */
+.nav-item:hover > .navItemUnderLine{
+    width: 100%;
+    background-color: #424e5b;
+}
+
+.navLeaf:hover{
+    animation: shake 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+/* shake the leaf of the navBR */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+}
+
+/* add shadow on image of container balanceYourBodyAndMind */
+.balanceYourBodyAndMindImg:hover{
+    filter: drop-shadow(10px 10px 20px rgb(24, 24, 23));
+    cursor: pointer;
+}
+
+
+
+
+.card{
+    overflow: hidden;
+    transition: .5s;
+}
+
+.galeryCards:hover .card{
+    opacity: .5;
+    transform: translateX(30%);
+}
+
+.galeryCards .details{
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:linear-gradient(to left , orange, tomato);
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+
+.galeryCards:hover .details{
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+.galeryCards .details .center{
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
