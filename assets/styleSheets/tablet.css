@@ -30,15 +30,10 @@
         width: 100%;
     }
 
-    .copyRight p{
-        display: inline;
-    }
-
     .navBarContainer ul{
         gap: 0.5rem;
     }
 }
-
 
 @media (min-width:1001px) and (max-width:1030px) {
     .headingsFontSize,.fontSize50px{

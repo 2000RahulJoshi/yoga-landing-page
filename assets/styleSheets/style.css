@@ -10,6 +10,10 @@
     font-size: 18px;
 }
 
+.dPhoneVisible{
+    display: none;
+}
+
 .bgPink{
     background-color: #f1c9c4;
 }

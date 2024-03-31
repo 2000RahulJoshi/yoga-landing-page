@@ -12,71 +12,77 @@
     />
     <link rel="stylesheet" href="./assets/styleSheets/style.css" />
     <link rel="stylesheet" href="./assets/styleSheets/tablet.css">
+    <link rel="stylesheet" href="./assets/styleSheets/mobileResponsive.css">
   </head>
   <body>
     <div class="parent">
         <!-- this container is for navigation bar which contains a image logo and some internal links -->
-      <div class="container-fluid g-0">
-        <div class="navBarContainer container g-0">
-          <!-- navigation bar -->
-          <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid g-0 py-lg-3">
-                  <!-- this container contains the navBar left image -->
-                <div class="navLeaf">
-                  <img src="./assets/images/navLeafImg.png" alt="LeafImage" width="90%">
+      <div class="container-fluid g-0 phoneBgColor m-sm-none">
+        <div class="width90">
+          <div class="navBarContainer container g-0">
+            <!-- navigation bar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid g-0 py-lg-3">
+                    <!-- this container contains the navBar left image -->
+                  <div class="navLeaf">
+                    <img src="./assets/images/navLeafImg.png" alt="LeafImage" width="90%">
+                  </div>
+                  <!-- to crete the toggle button -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- this container contains the navbar items -->
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navBarLists fontColorGrey ms-auto">
+                      <li class="nav-item position-relative">
+                        <!-- this container is used to create the underline on the navItems when user hover over them -->
+                        <div class="navItemUnderLine position-absolute"></div>
+                        <a class="nav-link fontSixe19px" href="#">Home</a>
+                      </li>
+    
+                      <li class="nav-item position-relative">
+                        <div class="navItemUnderLine position-absolute"></div>
+                        <a class="nav-link fontSixe19px" href="#">About</a>
+                      </li>
+                      <li class="nav-item position-relative">
+                        <div class="navItemUnderLine position-absolute"></div>
+                        <a class="nav-link fontSixe19px" href="#">Blog</a>
+                      </li>
+                      <li class="nav-item position-relative">
+                        <div class="navItemUnderLine position-absolute"></div>
+                        <a class="nav-link fontSixe19px" href="#">Training</a>
+                      </li>
+                      <li class="nav-item position-relative">
+                        <div class="navItemUnderLine position-absolute"></div>
+                        <a class="nav-link fontSixe19px" href="#">Event</a>
+                      </li>
+                      <li class="nav-item position-relative">
+                        <div class="navItemUnderLine position-absolute"></div>
+                        <a class="nav-link fontSixe19px" href="#">Shop</a>
+                      </li>
+                      <li class="nav-item position-relative">
+                        <div class="navItemUnderLine position-absolute"></div>
+                        <a class="nav-link fontSixe19px" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <!-- to crete the toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- this container contains the navbar items -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav navBarLists fontColorGrey ms-auto">
-                    <li class="nav-item position-relative">
-                      <!-- this container is used to create the underline on the navItems when user hover over them -->
-                      <div class="navItemUnderLine position-absolute"></div>
-                      <a class="nav-link fontSixe19px" href="#">Home</a>
-                    </li>
-  
-                    <li class="nav-item position-relative">
-                      <div class="navItemUnderLine position-absolute"></div>
-                      <a class="nav-link fontSixe19px" href="#">About</a>
-                    </li>
-                    <li class="nav-item position-relative">
-                      <div class="navItemUnderLine position-absolute"></div>
-                      <a class="nav-link fontSixe19px" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item position-relative">
-                      <div class="navItemUnderLine position-absolute"></div>
-                      <a class="nav-link fontSixe19px" href="#">Training</a>
-                    </li>
-                    <li class="nav-item position-relative">
-                      <div class="navItemUnderLine position-absolute"></div>
-                      <a class="nav-link fontSixe19px" href="#">Event</a>
-                    </li>
-                    <li class="nav-item position-relative">
-                      <div class="navItemUnderLine position-absolute"></div>
-                      <a class="nav-link fontSixe19px" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item position-relative">
-                      <div class="navItemUnderLine position-absolute"></div>
-                      <a class="nav-link fontSixe19px" href="#">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+              </nav>
+          </div>
         </div>
       </div>
 
       <!-- this is the first container after the navBar which contains the basic introduction of our page -->
-      <section class="container-fluid g-0 balanceYourBodyAndMind position-relative tabletPadding">
+      <section class="container-fluid g-0 balanceYourBodyAndMind position-relative tabletPadding width90 backgroundImageHidden phonePadding">
         <div class="g-0 container d-flex justify-content-between">
-           <div class="balanceYourBodyAndMindImg position-relative">
+           <div class="balanceYourBodyAndMindImg position-relative dPhoneNone">
             <img src="./assets/images/yogaGirl.png" alt="women-doing-yoga" width="100%" class="balanceYourBodyContainerWomenImg position-relative z-n1">
            </div>
-           <div class="balanceYourBodyAndMindText">
-              <h1 class="fw-bold fontColorGrey mb-0 headingsFontSize pt-lg-5 pt-sm-4">Balance Your Body and Mind</h1>
+           <div class="balanceYourBodyAndMindText width100">
+              <h1 class="fw-bold fontColorGrey mb-0 headingsFontSize pt-lg-5 pt-sm-4 text-sm-start text-center">Balance Your Body and Mind</h1>
+              <div class="position-relative dPhoneVisible width100 py-3">
+                <img src="./assets/images/phoneImgContainerOne.png" alt="women-doing-yoga" width="100%">
+               </div>
               <p class="fontColorGrey fontSixe19px fw-medium px-1 pt-lg-5 pt-sm-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
               <button class="mt-lg-5 mt-sm-4 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink">JOIN US NOW</button>
            </div> 
@@ -84,19 +90,26 @@
       </section>
 
       <!-- this is the second container which contains a breaf introduction about the various program for pregnant women -->
-      <section class="container-fluid g-0 pregnantWomenProgram tabletPadding">
-        <div class="container g-0 pregnantWomenProgramText ps-3">
-          <div class="pregnantWomenProgramHeading pt-lg-5 pt-sm-0">  
-            <h1 class="fw-bold fontColorGrey mb-0 headingsFontSize ">Pregnant</h1>
-            <h1 class="fw-bold fontColorGrey mb-0 headingsFontSize "> Women Program</h1>
+      <section class="container-fluid g-0 pregnantWomenProgram tabletPadding phonePadding backgroundImageHidden phoneBgColor">
+        <div class="width90 ">
+          <div class="container g-0 pregnantWomenProgramText ps-sm-3">
+            <div class="pregnantWomenProgramHeading pt-lg-5 pt-sm-0 width100 text-sm-start text-center">  
+              <h1 class="fw-bold fontColorGrey mb-0 headingsFontSize d-sm-block d-inline">Pregnant</h1>
+              <h1 class="fw-bold fontColorGrey mb-0 headingsFontSize d-sm-block d-inline"> Women Program</h1>
+            </div>
+  
+            <div class="dPhoneVisible py-3">
+              <img src="./assets/images/galeryImgOne.jpg" alt="" width="100%">
+            </div>
+  
+            <p class="fontColorGrey fontSixe19px fw-medium px-1 pt-lg-5 pt-sm-4 col-5 width100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+            <button class="mt-lg-5 mt-sm-4 mx-1 fontColorGrey fw-bold border-0 bgPink btnStyle">JOIN US NOW</button>
           </div>
-          <p class="fontColorGrey fontSixe19px fw-medium px-1 pt-lg-5 pt-sm-4 col-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-          <button class="mt-lg-5 mt-sm-4 mx-1 fontColorGrey fw-bold border-0 bgPink btnStyle">JOIN US NOW</button>
         </div>
       </section>
 
       <!-- this is container contains the various yoga posture(In which there are basically three programs) -->
-      <section class="container g-0 containerThreeYogaPostureProgram d-flex justify-content-around py-lg-5 tabletPadding">
+      <section class="container g-0 containerThreeYogaPostureProgram d-flex justify-content-around py-lg-5 tabletPadding dPhoneNone">
         <div class="containerThreeYogaPostureProgramCard w-25 py-4">
           <!-- this section contains the images of program and program descripton -->
           <div class="containerThreeYogaPostureProgramCardImg d-flex justify-content-center">
@@ -125,18 +138,21 @@
       </section>
 
       <!-- this is the container of yoga Breathing and Pranayam which contains the information  -->
-      <section class="container-fluid g-0 yogaBreatingAndPranayam tabletPadding">
+      <section class="container-fluid g-0 yogaBreatingAndPranayam tabletPadding backgroundImageHidden phonePadding width90">
         <div class="container g-0">
           <div class="row g-0 pe-1 justify-content-between">
-            <div class="yogaBreatingAndPranayamText pt-lg-4 pt-sm-0">
-              <div class="yogaBreatingAndPranayamTextHeading ps-3">
-                <h1 class="mb-0 fontColorGrey fw-bold fontSize50px">Yoga Breathing</h1>
-                <h1 class="mb-0 fontColorGrey fw-bold fontSize50px">or Pranayama</h1>
+            <div class="yogaBreatingAndPranayamText pt-lg-4 pt-sm-0 width100">
+              <div class="yogaBreatingAndPranayamTextHeading ps-sm-3 p-0 text-sm-start text-center">
+                <h1 class="mb-0 fontColorGrey fw-bold fontSize50px d-sm-block d-inline">Yoga Breathing</h1>
+                <h1 class="mb-0 fontColorGrey fw-bold fontSize50px d-sm-block d-inline">or Pranayama</h1>
               </div>
-              <p class="fontColorGrey fontSixe19px ps-3 pt-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <div class="dPhoneVisible py-3">
+                <img src="./assets/images/pranayamaImg.jpg" alt="" width="100%">
+              </div>
+              <p class="fontColorGrey fontSixe19px ps-sm-3 pt-sm-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
               <button class="mt-3 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink ms-3">LEARN MORE</button>
             </div>
-            <div class="yogaBreatingAndPranayamImg pe-3 w-50 ps-2 position-relative pt-lg-0 py-sm-3">
+            <div class="yogaBreatingAndPranayamImg pe-3 w-50 ps-2 position-relative pt-lg-0 py-sm-3 dPhoneNone">
               <img src="./assets/images/yogaBreatingAndPranayamImgBottomLeft.png" alt="leaf image" class="position-absolute yogaBreatingAndPranayamImgBottomLeft" width="20%">
               <img src="./assets/images/yogaBreatingAndPranayamImgBottomRight.png" alt="bubble and brush image" class="position-absolute yogaBreatingAndPranayamImgBottomRight" width="30%">
               <img src="./assets/images/pranayamaImg.jpg" alt="yoga breathing and pranayama" width="100%">
@@ -146,32 +162,37 @@
       </section>
 
       <!-- this container describe the procedure to join the program -->
-      <section class="joinNowContainer container-fluid g-0 tabletPadding">
-        <div class="container g-0">
-          <div class="joinNowText col-6 g-0 ms-auto ps-5">
-            <div class="joinNowTextHeading ps-3 position-relative">
+      <section class="joinNowContainer container-fluid g-0 tabletPadding backgroundImageHidden phonePadding phoneBgColor">
+        <div class="container g-0 width90">
+          <div class="joinNowText col-6 g-0 ms-auto ps-sm-5 width100">
+            <div class="joinNowTextHeading ps-3 position-relative text-sm-start text-center">
               <img src="./assets/images/joinNowBrush.png" alt="brush image" class="position-absolute w-50 joinNowBrushImg">
-              <h1 class="mb-0 fontColorGrey fw-bold fontSize50px position-relative z-3">Join Now and</h1>
-              <h1 class="mb-0 fontColorGrey fw-bold fontSize50px position-relative z-3">Get 50% Off</h1>
+              <h1 class="mb-0 fontColorGrey fw-bold fontSize50px position-relative z-3 d-sm-block d-inline">Join Now and</h1>
+              <h1 class="mb-0 fontColorGrey fw-bold fontSize50px position-relative z-3 d-sm-block d-inline">Get 50% Off</h1>
             </div>
-            <p class="fontColorGrey fontSixe19px ps-3 pt-lg-4 pt-sm-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+
+            <div class="dPhoneVisible py-3">
+              <img src="./assets/images/joinUsPhoneImg.png" alt="join us image" width="100%">
+            </div>
+            <p class="fontColorGrey fontSixe19px ps-sm-3 pt-lg-4 pt-sm-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
               <button class="my-lg-3 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink ms-3">JOIN NOW</button>
           </div>
         </div>
       </section>
 
       <!-- this is the galery container which contains three cards and some text -->
-      <section class="galery container-fluid g-0 pt-lg-3 pb-lg-4 tabletPadding py-sm-0">
-        <div class="container g-0 py-lg-5 px-3 py-sm-0">
+      <section class="galery container-fluid g-0 pt-lg-3 pb-lg-4 tabletPadding py-sm-0 backgroundImageHidden width90 phonePadding">
+        <div class="container g-0 py-lg-5 px-sm-3 py-sm-0 width100">
           <h1 class="mb-0 fontColorGrey fw-bold fontSize50px text-center">Galery</h1>
-          <p class="fontColorGrey fontSixe19px text-center col-9 m-auto pt-lg-4 pb-1 pt-sm-3">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
+          <p class="fontColorGrey fontSixe19px text-sm-center col-9 m-auto pt-lg-4 pb-1 pt-sm-3 pt-3 width100">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
 
           <!-- this container contains the bootstrap cards -->
-          <div class="d-flex justify-content-between g-0 pt-lg-5 pt-sm-4">
+          <div class="d-flex justify-content-sm-between flex-sm-row flex-column gap-sm-0 gap-4 g-0 pt-lg-5 pt-sm-4 pt-3">
             <!-- card1 -->
-            <div class="galeryCards position-relative">
+            <div class="galeryCards position-relative width100">
               <div class="card border-0">
-                <img src="./assets/images/galeryImgOne.jpg" class="card-img-top rounded-0" alt="galery img one" width="100%">
+                <img src="./assets/images/galeryImgOne.jpg" class="card-img-top rounded-0 dPhoneNone" alt="galery img one" width="100%">
+                <img src="./assets/images/galeryPhone.png" alt="galery image " width="100%" class="card-img-top rounded-0 dPhoneVisible">
                 <div class="card-body px-3 py-4">
                   <h1 class="fontColorGrey fw-bold text-center fs-3">Facilis Gravida</h1>
                   <p class="card-text fontColorGrey text-center pt-1 fw-medium opacity-75">A lacus vestibulum sed. Amet purus gravida quis blandit trupis.</p>
@@ -187,9 +208,10 @@
             </div>
 
             <!-- card2 -->
-            <div class="galeryCards position-relative">
+            <div class="galeryCards position-relative width100">
               <div class="card border-0">
-                <img src="./assets/images/galeryImgTwo.jpg" class="card-img-top rounded-0" alt="galery img two" width="100%">
+                <img src="./assets/images/galeryImgTwo.jpg" class="card-img-top rounded-0 dPhoneNone" alt="galery img two" width="100%">
+                <img src="./assets/images/galeryPhoneTwo.png" alt="galery img" width="100%" class="card-img-top rounded-0 dPhoneVisible">
                 <div class="card-body px-3 py-4">
                   <h1 class="fontColorGrey fw-bold text-center fs-3">Facilis Gravida</h1>
                   <p class="card-text fontColorGrey text-center pt-1 fw-medium opacity-75">A lacus vestibulum sed. Amet purus gravida quis blandit trupis.</p>
@@ -206,9 +228,10 @@
 
 
             <!-- card3 -->
-            <div class="galeryCards position-relative">
+            <div class="galeryCards position-relative width100">
               <div class="card border-0">
-                <img src="./assets/images/galeryImgThree.jpg" class="card-img-top rounded-0" alt="galery img one" width="100%">
+                <img src="./assets/images/galeryImgThree.jpg" class="card-img-top rounded-0 dPhoneNone" alt="galery img one" width="100%">
+                <img src="./assets/images/galeryPhoneThree.png" class="card-img-top rounded-0 dPhoneVisible" alt="galery img one" width="100%">
                 <div class="card-body px-3 py-4">
                   <h1 class="fontColorGrey fw-bold text-center fs-3">Facilis Gravida</h1>
                   <p class="card-text fontColorGrey text-center pt-1 fw-medium opacity-75">A lacus vestibulum sed. Amet purus gravida quis blandit trupis.</p>
@@ -229,28 +252,33 @@
       </section>
 
       <!-- this container contains the image of yogaTraining reel and some text  -->
-      <section class="container-fluid g-0 yogaTrainingVideoShowReel tabletPadding">
-        <div class="container g-0 d-flex justify-content-between">
-          <!-- container in which image thumbnail of yoga training reel -->
-          <div class="yogaTrainingVideoShowReelImg w-50 ps-3 pt-lg-0 pt-sm-2">
-            <img src="./assets/images/reelImg.png" alt="yoga reel video image" width="100%">
-          </div>
-          <!-- text about the above container -->
-          <div class="yogaTrainingVideoShowReelText ps-4 pt-lg-3 pt-sm-0">
-            <div class="yogaTrainingVideoShowReelTextHeading pb-1">
-              <h1 class="fontSize50px fontColorGrey fw-bold mb-0">Yoga Training</h1>
-              <h1 class="fontSize50px fontColorGrey fw-bold mb-0">Video Showreel</h1>
+      <section class="container-fluid g-0 yogaTrainingVideoShowReel tabletPadding phonePadding">
+        <div class="width90">
+          <div class="container g-0 d-flex justify-content-between width100">
+            <!-- container in which image thumbnail of yoga training reel -->
+            <div class="yogaTrainingVideoShowReelImg w-50 ps-3 pt-lg-0 pt-sm-2 dPhoneNone">
+              <img src="./assets/images/reelImg.png" alt="yoga reel video image" width="100%">
             </div>
-            <p class="fontColorGrey fontSixe19px fw-medium pt-lg-4 pt-sm-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-            <div class="socialMediaIcons d-flex gap-4 pt-lg-4 pt-sm-2">
-              <div class="socialMediaIconsBox fbIcon">
-                <img src="./assets/images/fbIcon.png" alt="facebook Logo" width="8.5px">
+            <!-- text about the above container -->
+            <div class="yogaTrainingVideoShowReelText ps-sm-4 pt-lg-3 pt-sm-0 width100">
+              <div class="yogaTrainingVideoShowReelTextHeading pb-1 text-sm-start text-center">
+                <h1 class="fontSize50px fontColorGrey fw-bold mb-0 d-sm-block d-inline">Yoga Training</h1>
+                <h1 class="fontSize50px fontColorGrey fw-bold mb-0 d-sm-block d-inline">Video Showreel</h1>
               </div>
-              <div class="socialMediaIconsBox instaIcon ms-2">
-                <img src="./assets/images/instaIcon.png" alt="instagram Logo" width="20px">
+              <div class="dPhoneVisible py-3">
+                <img src="./assets/images/reelImg.png" alt="yoga reel video image" width="100%">
               </div>
-              <div class="socialMediaIconsBox twitterIcon ms-2">
-                <img src="./assets/images/twitterIcon.png" alt="twitter Logo" width="20px">
+              <p class="fontColorGrey fontSixe19px fw-medium pt-lg-4 pt-sm-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <div class="socialMediaIcons d-flex gap-4 pt-lg-4 pt-sm-2 justify-content-sm-start justify-content-center">
+                <div class="socialMediaIconsBox fbIcon">
+                  <img src="./assets/images/fbIcon.png" alt="facebook Logo" width="8.5px">
+                </div>
+                <div class="socialMediaIconsBox instaIcon ms-2">
+                  <img src="./assets/images/instaIcon.png" alt="instagram Logo" width="20px">
+                </div>
+                <div class="socialMediaIconsBox twitterIcon ms-2">
+                  <img src="./assets/images/twitterIcon.png" alt="twitter Logo" width="20px">
+                </div>
               </div>
             </div>
           </div>
@@ -258,25 +286,24 @@
       </section>
 
       <!-- getInTouch container -->
-      <section class="getInTouch container-fluid g-0 py-lg-5 tabletPadding">
-        <div class="getInTouchContent col-9 m-auto pt-lg-3 pt-sm-0 pb-2 position-relative">
-          <img src="./assets/images/getInTouchBrushOne.png" alt="brush image" class="position-absolute z-n1 getInTouchBrushOne w-25" height="53%">
-          <img src="./assets/images/getInTouchBrushTwo.png" alt="brush with leaf image" class="position-absolute z-n1 getInTouchBrushTwo" height="47%" width="29%">
+      <section class="getInTouch container-fluid g-0 py-lg-5 tabletPadding backgroundImageHidden width90 phonePadding">
+        <div class="getInTouchContent col-9 m-auto pt-lg-3 pt-sm-0 pb-sm-2 position-relative width100">
+          <img src="./assets/images/getInTouchBrushOne.png" alt="brush image" class="position-absolute z-n1 getInTouchBrushOne w-25 dPhoneNone" height="53%">
+          <img src="./assets/images/getInTouchBrushTwo.png" alt="brush with leaf image" class="position-absolute z-n1 getInTouchBrushTwo dPhoneNone" height="47%" width="29%">
           <h1 class="text-center fontSize50px fontColorGrey fw-bold">Get in Touch</h1>
-          <p class="text-center fontColorGrey fontSixe19px col-11 m-auto px-4 pt-lg-4 pt-sm-2 pb-2">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci pellentesque dignissim enim sit.</p>
-          <div class="getInTouchForm pt-lg-5 pt-sm-4 px-4">
-            <form class="w-100 d-flex flex-column align-items-center px-3">
+          <p class="text-sm-center fontColorGrey fontSixe19px col-sm-11 m-sm-auto px-sm-4 pt-lg-4 pt-sm-2 pb-2">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci pellentesque dignissim enim sit.</p>
+          <div class="getInTouchForm pt-lg-5 pt-sm-4 px-sm-4">
+            <form class="w-100 d-flex flex-column align-items-center px-sm-3">
               <div class="mb-4 w-100">
                 <input type="text" class=" w-100 formInputStyle" id="name" placeholder="Your Name">
               </div>
               <div class="mb-4 w-100 pt-2">
                 <input type="text" class=" w-100 formInputStyle" id="gender" placeholder="Gender" >
               </div>
-              <div class="mb-lg-4 mb-sm-0 w-100 pt-2">
+              <div class="mb-lg-4 mb-sm-3 w-100 pt-2 mb-4">
                 <textarea class=" pb-0 w-100 formInputStyle" placeholder="Messages" id="messages" rows="4"></textarea>
-                <!-- <label for="messages">Comments</label> -->
               </div>
-              <button type="submit" class="btnStyle bgPink border-0 fw-bold fontColorGrey mt-4">SEND MESSAGE</button>
+              <button type="submit" class="btnStyle bgPink border-0 fw-bold fontColorGrey">SEND MESSAGE</button>
             </form>
           </div>
         </div>
@@ -284,20 +311,20 @@
       </section>
 
       <!-- this is the section for the footer -->
-      <footer class="container-fluid g-0 py-lg-5 tabletPadding">
-        <div class="container g-0 px-5">
-          <div class="d-flex flex-sm-column flex-lg-row col-11 m-auto justify-content-lg-between align-items-sm-center">
-            <div class="footerLeft d-flex justify-content-between">
-              <div class="footerLeftHeading">
-                <h2 class="fw-bold yourCompanyHeadingFooter mb-4 text-light">Your Company</h2>
-                <div class="para mb-4 pt-2">
-                  <p class="mb-1">Halimum Street 25</p>
-                  <p class="mb-1">Jakarta, Indonesia</p>
-                  <p class="mb-1">12850</p>
+      <footer class="container-fluid g-0 py-lg-5 tabletPadding phonePadding">
+        <div class="container g-0 px-sm-5 width90">
+          <div class="d-flex flex-column flex-lg-row col-sm-11 m-sm-auto justify-content-lg-between align-items-center">
+            <div class="footerLeft d-flex justify-content-between width100 flex-sm-row flex-column gap-sm-0 gap-4 align-items-center">
+              <div class="footerLeftHeading text-sm-start text-center">
+                <h2 class="fw-bold yourCompanyHeadingFooter mb-sm-4 text-light">Your Company</h2>
+                <div class="para mb-sm-4 pt-2 text-sm-start text-center">
+                  <p class="mb-1 d-sm-block d-inline">Halimum Street 25</p>
+                  <p class="mb-1 d-sm-block d-inline">Jakarta, Indonesia</p>
+                  <p class="mb-1 d-sm-block d-inline">12850</p>
                 </div>
-                <p class="mb-1 mt-4 pt-1"><a href="#">www.yourdomain.com</a></p>
+                <p class="mb-1 mt-sm-4 pt-1"><a href="#">www.yourdomain.com</a></p>
               </div>
-              <div class="footerAnchor">
+              <div class="footerAnchor width100 text-sm-start text-center">
                   <p class="mb-1 fw-bold fs-6 text-light">Sitemap</p>
                   <p class="mb-1"><a href="">Home</a></p>
                   <p class="mb-1"><a href="">About</a></p>
@@ -306,35 +333,35 @@
                   <p class="mb-1"><a href="">Store</a></p>
                   <p class="mb-1"><a href="">Contact</a></p>
               </div>
-              <div class="footerAnchor">
+              <div class="footerAnchor width100 text-sm-start text-center">
                   <p class="mb-1 fw-bold fs-6 text-light">Lorem Ipsum</p>
-                  <p class="mb-1"><a href="">Neque</a></p>
-                  <p class="mb-1"><a href="">Suspendisse</a></p>
-                  <p class="mb-1"><a href="">Dictum</a></p>
-                  <p class="mb-1"><a href="">Porttitor</a></p>
-                  <p class="mb-1"><a href="">Tincidunt</a></p>
-                  <p class="mb-1"><a href="">Enim lobortis</a></p>
+                  <p class="mb-1"><a href="#">Neque</a></p>
+                  <p class="mb-1"><a href="#">Suspendisse</a></p>
+                  <p class="mb-1"><a href="#">Dictum</a></p>
+                  <p class="mb-1"><a href="#">Porttitor</a></p>
+                  <p class="mb-1"><a href="#">Tincidunt</a></p>
+                  <p class="mb-1"><a href="#">Enim lobortis</a></p>
               </div>
-              <div class="footerAnchor">
+              <div class="footerAnchor width100 text-sm-start text-center">
                   <p class="mb-1 fw-bold fs-6 text-light">Sit Amet</p>
-                  <p class="mb-1"><a href="">Neque</a></p>
-                  <p class="mb-1"><a href="">Suspendisse</a></p>
-                  <p class="mb-1"><a href="">Dictum</a></p>
-                  <p class="mb-1"><a href="">Porttitor</a></p>
-                  <p class="mb-1"><a href="">Tincidunt</a></p>
-                  <p class="mb-1"><a href="">Enim lobortis</a></p>
+                  <p class="mb-1"><a href="#">Neque</a></p>
+                  <p class="mb-1"><a href="#">Suspendisse</a></p>
+                  <p class="mb-1"><a href="#">Dictum</a></p>
+                  <p class="mb-1"><a href="#">Porttitor</a></p>
+                  <p class="mb-1"><a href="#">Tincidunt</a></p>
+                  <p class="mb-1"><a href="#">Enim lobortis</a></p>
               </div>
             </div>
             <div class="footerRight">
-              <div class="pb-4 footerRightLeaf d-lg-block d-sm-none">
+              <div class="pb-4 footerRightLeaf d-lg-block d-none">
                 <img src="./assets/images/footerImg.png" alt="" width="32%">
               </div>
-              <div class="copyRight text-sm-center text-lg-start">
-                <p class="mb-1 pt-1">Copyright &#169; 2020 Freepik</p>
-                <p class="mb-1">Company S.L. All rights reserved.</p>
+              <div class="copyRight text-center text-lg-start">
+                <p class="mb-1 pt-1 d-lg-block d-inline">Copyright &#169; 2020 Freepik</p>
+                <p class="mb-1 d-lg-block d-inline">Company S.L. All rights reserved.</p>
               </div>
 
-              <div class="footerIcons pt-4 d-flex gap-4 justify-content-sm-center justify-content-lg-start">
+              <div class="footerIcons pt-4 d-flex gap-4 justify-content-center justify-content-lg-start">
                 <img src="./assets/images/footerFb.png" alt="facebook logo">
                 <img src="./assets/images/footerInsta.png" alt="insta logo">
                 <img src="./assets/images/footerTwitter.png" alt="twitter logo">
