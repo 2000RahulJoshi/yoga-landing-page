@@ -10,6 +10,7 @@
     font-size: 18px;
 }
 
+
 .dPhoneVisible{
     display: none;
 }
@@ -223,7 +224,6 @@ footer,footer a{
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(5deg); }
 }
-
 
 /* this is to add border and box shadow on the containerThreeYogaPostureProgramCard when the user hover over it */
 .containerThreeYogaPostureProgramCard{
