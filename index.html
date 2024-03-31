@@ -67,10 +67,10 @@
       </div>
 
       <!-- this is the first container after the navBar which contains the basic introduction of our page -->
-      <section class="container-fluid g-0 balanceYourBodyAndMind">
+      <section class="container-fluid g-0 balanceYourBodyAndMind position-relative">
         <div class="g-0 container d-flex justify-content-between">
            <div class="balanceYourBodyAndMindImg position-relative">
-            <img src="./assets/images/yogaGirl.png" alt="women-doing-yoga" width="100%" class="balanceYourBodyContainerWomenImg">
+            <img src="./assets/images/yogaGirl.png" alt="women-doing-yoga" width="100%" class="balanceYourBodyContainerWomenImg position-relative z-n1">
            </div>
            <div class="balanceYourBodyAndMindText">
             <!-- <div class="balanceYourBodyAndMindTextHeading pt-5 pb-1"> -->
@@ -134,7 +134,9 @@
               <p class="fontColorGrey fontSixe19px ps-3 pt-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
               <button class="mt-3 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink ms-3">LEARN MORE</button>
             </div>
-            <div class="yogaBreatingAndPranayamImg pe-3 w-50 ps-2">
+            <div class="yogaBreatingAndPranayamImg pe-3 w-50 ps-2 position-relative">
+              <img src="./assets/images/yogaBreatingAndPranayamImgBottomLeft.png" alt="leaf image" class="position-absolute yogaBreatingAndPranayamImgBottomLeft" width="20%">
+              <img src="./assets/images/yogaBreatingAndPranayamImgBottomRight.png" alt="bubble and brush image" class="position-absolute yogaBreatingAndPranayamImgBottomRight" width="30%">
               <img src="./assets/images/pranayamaImg.jpg" alt="yoga breathing and pranayama" width="100%">
             </div>
           </div>
@@ -145,9 +147,10 @@
       <section class="joinNowContainer container-fluid g-0">
         <div class="container g-0">
           <div class="joinNowText col-6 g-0 ms-auto ps-5">
-            <div class="joinNowTextHeading ps-3">
-              <h1 class="mb-0 fontColorGrey fw-bold fontSize50px">Join Now and</h1>
-              <h1 class="mb-0 fontColorGrey fw-bold fontSize50px">Get 50% Off</h1>
+            <div class="joinNowTextHeading ps-3 position-relative">
+              <img src="./assets/images/joinNowBrush.png" alt="brush image" class="position-absolute w-50 joinNowBrushImg">
+              <h1 class="mb-0 fontColorGrey fw-bold fontSize50px position-relative z-3">Join Now and</h1>
+              <h1 class="mb-0 fontColorGrey fw-bold fontSize50px position-relative z-3">Get 50% Off</h1>
             </div>
             <p class="fontColorGrey fontSixe19px ps-3 pt-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
               <button class="mt-3 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink ms-3">JOIN NOW</button>
@@ -254,7 +257,9 @@
 
       <!-- getInTouch container -->
       <section class="getInTouch container-fluid g-0 py-5">
-        <div class="getInTouchContent col-9 m-auto pt-3 pb-2">
+        <div class="getInTouchContent col-9 m-auto pt-3 pb-2 position-relative">
+          <img src="./assets/images/getInTouchBrushOne.png" alt="brush image" class="position-absolute z-n1 getInTouchBrushOne w-25" height="53%">
+          <img src="./assets/images/getInTouchBrushTwo.png" alt="brush with leaf image" class="position-absolute z-n1 getInTouchBrushTwo" height="47%" width="29%">
           <h1 class="text-center fontSize50px fontColorGrey fw-bold">Get in Touch</h1>
           <p class="text-center fontColorGrey fontSixe19px col-11 m-auto px-4 pt-4 pb-2">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci pellentesque dignissim enim sit.</p>
           <div class="getInTouchForm pt-5 px-4">
@@ -276,7 +281,64 @@
 
       </section>
 
-      <!-- this is the section for the footer footer -->
+      <!-- this is the section for the footer -->
+      <footer class="container-fluid g-0 py-5">
+        <div class="container g-0 px-5">
+          <div class="d-flex col-11 m-auto justify-content-between">
+            <div class="footerLeft d-flex justify-content-between">
+              <div class="footerLeftHeading">
+                <h2 class="fw-bold yourCompanyHeadingFooter mb-4 text-light">Your Company</h2>
+                <div class="para mb-4 pt-2">
+                  <p class="mb-1">Halimum Street 25</p>
+                  <p class="mb-1">Jakarta, Indonesia</p>
+                  <p class="mb-1">12850</p>
+                </div>
+                <p class="mb-1 mt-4 pt-1"><a href="#">www.yourdomain.com</a></p>
+              </div>
+              <div class="footerAnchor">
+                  <p class="mb-1 fw-bold fs-6 text-light">Sitemap</p>
+                  <p class="mb-1"><a href="">Home</a></p>
+                  <p class="mb-1"><a href="">About</a></p>
+                  <p class="mb-1"><a href="">Blog</a></p>
+                  <p class="mb-1"><a href="">Menu</a></p>
+                  <p class="mb-1"><a href="">Store</a></p>
+                  <p class="mb-1"><a href="">Contact</a></p>
+              </div>
+              <div class="footerAnchor">
+                  <p class="mb-1 fw-bold fs-6 text-light">Lorem Ipsum</p>
+                  <p class="mb-1"><a href="">Neque</a></p>
+                  <p class="mb-1"><a href="">Suspendisse</a></p>
+                  <p class="mb-1"><a href="">Dictum</a></p>
+                  <p class="mb-1"><a href="">Porttitor</a></p>
+                  <p class="mb-1"><a href="">Tincidunt</a></p>
+                  <p class="mb-1"><a href="">Enim lobortis</a></p>
+              </div>
+              <div class="footerAnchor">
+                  <p class="mb-1 fw-bold fs-6 text-light">Sit Amet</p>
+                  <p class="mb-1"><a href="">Neque</a></p>
+                  <p class="mb-1"><a href="">Suspendisse</a></p>
+                  <p class="mb-1"><a href="">Dictum</a></p>
+                  <p class="mb-1"><a href="">Porttitor</a></p>
+                  <p class="mb-1"><a href="">Tincidunt</a></p>
+                  <p class="mb-1"><a href="">Enim lobortis</a></p>
+              </div>
+            </div>
+            <div class="footerRight">
+              <div class="pb-4">
+                <img src="./assets/images/footerImg.png" alt="" width="32%">
+              </div>
+              <p class="mb-1 pt-1">Copyright &#169; 2020 Freepik</p>
+              <p class="mb-1">Company S.L. All rights reserved.</p>
+
+              <div class="footerIcons pt-4 d-flex gap-4">
+                <img src="./assets/images/footerFb.png" alt="facebook logo">
+                <img src="./assets/images/footerInsta.png" alt="insta logo">
+                <img src="./assets/images/footerTwitter.png" alt="twitter logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     </div>
 
