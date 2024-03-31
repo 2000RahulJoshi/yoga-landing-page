@@ -2,7 +2,7 @@
     .headingsFontSize,.fontSize50px{
         font-size: 2.2rem !important;
     }
-
+    /* to add constant padding from top and bottom */
     .tabletPadding{
         padding: 2rem 0 !important;
     }

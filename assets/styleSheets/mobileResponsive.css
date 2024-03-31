@@ -1,8 +1,4 @@
 @media (max-width:550px) {
-    .parent{
-        border: 1px solid black;
-    }
-
     .width84{
         width: 84%;
         margin: auto;
@@ -41,7 +37,6 @@
     }
 
     .btnStyle{
-        /* border-radius: 5px; */
         display: block !important;
         margin: auto !important;
     }

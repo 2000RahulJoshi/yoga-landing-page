@@ -10,7 +10,6 @@
     font-size: 18px;
 }
 
-
 .dPhoneVisible{
     display: none;
 }
@@ -65,7 +64,7 @@
 .balanceYourBodyAndMindImg{
     width: 47% !important;
 }
-
+/* this is to move the first image to left to match the design */
 .balanceYourBodyContainerWomenImg{
     transform: translate(-7%,0);
 }
@@ -82,6 +81,7 @@
     padding: 6rem 0 9rem 0;
 }
 
+/* container three */
 .yogaBreatingAndPranayam{
     padding: 6rem 0;
     background-image: url(../images/yogaBreatingAndPranayamTopLeft.png), url(../images/yogaBreatingAndPranayamTopCenter.png), url(../images/yogaBreatingAndPranayamTopRight.png), url(../images/yogaBreatingAndPranayamBottomLeft.png);
@@ -90,6 +90,7 @@
     background-repeat: no-repeat;
 }
 
+/* container four */
 .joinNowContainer{
     padding: 6rem 0;
     background-image: url(../images/joinUsNowImg.jpg);
@@ -97,6 +98,7 @@
     background-repeat: no-repeat;
 }
 
+/* container five */
 .galeryCards{
     width: 28.5%;
     box-shadow: #ccc9c9 5px 7px 20px 0px;
@@ -137,6 +139,7 @@ textarea{
     resize: none;
 }
 
+/* form input just before footer */
 .formInputStyle{
     background-color: #eff0ef;
     border: 1.5px solid #b7b8b7 !important;
@@ -160,7 +163,7 @@ footer,footer a{
     font-size: 20.4px;
 }
 
-/* to set the background images */
+/* Now this is the css to add background of positio absolute container*/
 .joinNowBrushImg{
     transform: translate(-14%, -16%);
 }
@@ -198,7 +201,6 @@ footer,footer a{
     background-size: 15%, 10%, 2%;
     background-repeat: no-repeat;
 }
-
 
 
 /* these are the hover effects and animations */
