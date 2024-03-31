@@ -1,0 +1,47 @@
+@media (min-width:600px) and (max-width:1000px) {
+    .headingsFontSize,.fontSize50px{
+        font-size: 2.2rem !important;
+    }
+
+    .tabletPadding{
+        padding: 2rem 0 !important;
+    }
+
+    .navBarContainer li{
+        text-align: center;
+    }
+
+    .fontSixe19px{
+        font-size: 14px !important;
+    }
+
+    .galeryCards h1{
+        font-size: 22px !important;
+    }
+
+    .galeryCards p{
+        font-size: 14px !important;
+        word-break: break-all;
+        text-align: justify !important;
+    }
+
+    .footerLeft,.footerRight{
+        padding-top: 2rem;
+        width: 100%;
+    }
+
+    .copyRight p{
+        display: inline;
+    }
+
+    .navBarContainer ul{
+        gap: 0.5rem;
+    }
+}
+
+
+@media (min-width:1001px) and (max-width:1030px) {
+    .headingsFontSize,.fontSize50px{
+        font-size: 2.2rem !important;
+    }
+}
