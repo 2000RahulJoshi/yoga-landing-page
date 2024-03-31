@@ -16,6 +16,71 @@
   </head>
   <body>
     <div class="parent">
+      <!-- form modal -->
+      <div class="modal fade" id="registerForm" tabindex="-1" aria-labelledby="exampleModalLabel"         aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-danger-emphasis" id="exampleModalLabel">Please fill the following details.</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="formDesign">
+                  <div class="form-group">
+                    <label for="FirstName" class="pt-3 pb-2 fs-6 text-primary fw-medium">First Name</label>
+                    <input type="text" class="form-control" id="FirstName" aria-describedby="userName" placeholder="First name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="LastName" class="pt-3 pb-2 fs-6 text-primary fw-medium">Last Name</label>
+                    <input type="text" class="form-control" id="LastName" aria-describedby="userName" placeholder="Last name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phoneNo" class="pt-3 pb-2 fs-6 text-primary fw-medium">Mobile no</label>
+                    <input type="phone" class="form-control" id="phoneNo" aria-describedby="phoneNo" placeholder="Mobile No">
+                  </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" class="pt-3 pb-2 fs-6 text-primary fw-medium">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" class="pt-3 pb-2 fs-6 text-primary fw-medium">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" class="pt-3 pb-2 fs-6 text-primary fw-medium">Conform Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- learn more modal -->
+      <div class="modal fade" id="learnMore" tabindex="-1" aria-labelledby="exampleModalLabel"         aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Yoga Breathing
+                or Pranayama.</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo et autem fuga dolore suscipit nemo quae? Pariatur perferendis a officiis, necessitatibus totam labore velit? Aliquid rerum commodi sed vel alias corporis tempore perferendis quis labore. Dolorum nobis at dignissimos beatae.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
         <!-- this container is for navigation bar which contains a image logo and some internal links -->
       <div class="container-fluid g-0 phoneBgColor m-sm-none">
         <div class="width84">
@@ -84,7 +149,7 @@
                 <img src="./assets/images/phoneImgContainerOne.png" alt="women-doing-yoga" width="100%">
                </div>
               <p class="fontColorGrey fontSixe19px fw-medium px-1 pt-lg-5 pt-sm-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-              <button class="mt-lg-5 mt-sm-4 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink">JOIN US NOW</button>
+              <button class="mt-lg-5 mt-sm-4 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink" data-bs-toggle="modal" data-bs-target="#registerForm">JOIN US NOW</button>
            </div> 
         </div>
       </section>
@@ -103,7 +168,7 @@
             </div>
   
             <p class="fontColorGrey fontSixe19px fw-medium px-1 pt-lg-5 pt-sm-4 col-5 width100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-            <button class="mt-lg-5 mt-sm-4 mx-1 fontColorGrey fw-bold border-0 bgPink btnStyle">JOIN US NOW</button>
+            <button class="mt-lg-5 mt-sm-4 mx-1 fontColorGrey fw-bold border-0 bgPink btnStyle" data-bs-toggle="modal" data-bs-target="#registerForm">JOIN US NOW</button>
           </div>
         </div>
       </section>
@@ -150,12 +215,12 @@
                 <img src="./assets/images/pranayamaImg.jpg" alt="" width="100%">
               </div>
               <p class="fontColorGrey fontSixe19px ps-sm-3 pt-sm-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-              <button class="mt-3 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink ms-3">LEARN MORE</button>
+              <button class="mt-3 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink ms-3" data-bs-target="#learnMore" data-bs-toggle="modal">LEARN MORE</button>
             </div>
             <div class="yogaBreatingAndPranayamImg pe-3 w-50 ps-2 position-relative pt-lg-0 py-sm-3 dPhoneNone">
               <img src="./assets/images/yogaBreatingAndPranayamImgBottomLeft.png" alt="leaf image" class="position-absolute yogaBreatingAndPranayamImgBottomLeft" width="20%">
               <img src="./assets/images/yogaBreatingAndPranayamImgBottomRight.png" alt="bubble and brush image" class="position-absolute yogaBreatingAndPranayamImgBottomRight" width="30%">
-              <img src="./assets/images/pranayamaImg.jpg" alt="yoga breathing and pranayama" width="100%">
+              <img src="./assets/images/pranayamaImg.jpg" alt="yoga breathing and pranayama" width="100%" class="yogaBreatingMainImg">
             </div>
           </div>
         </div>
@@ -175,7 +240,7 @@
               <img src="./assets/images/joinUsPhoneImg.png" alt="join us image" width="100%">
             </div>
             <p class="fontColorGrey fontSixe19px ps-sm-3 pt-lg-4 pt-sm-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-              <button class="my-lg-3 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink ms-3">JOIN NOW</button>
+              <button class="my-lg-3 mx-1 fontColorGrey fw-bold btnStyle border-0 bgPink ms-3" data-bs-toggle="modal" data-bs-target="#registerForm">JOIN NOW</button>
           </div>
         </div>
       </section>
@@ -201,8 +266,20 @@
 
               <div class="details position-absolute w-75">
                 <div class="center">
-                  <h1>Someone famous<br><span>team leader</span></h1>
-                  <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                  <h1 class="fontColorGrey fontSixe19px fw-bold">Serenity in Motion</h1>
+                  <p style="word-break: break-all;">Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                  <h1 class="fontColorGrey fontSixe19px fw-bold pb-2">Follow Us On</h1>
+                  <div class="socialMediaIcons d-flex gap-4 justify-content-center">
+                    <div class="socialMediaIconsBox fbIcon">
+                      <img src="./assets/images/fbIcon.png" alt="facebook Logo" width="8.5px">
+                    </div>
+                    <div class="socialMediaIconsBox instaIcon ms-2">
+                      <img src="./assets/images/instaIcon.png" alt="instagram Logo" width="20px">
+                    </div>
+                    <div class="socialMediaIconsBox twitterIcon ms-2">
+                      <img src="./assets/images/twitterIcon.png" alt="twitter Logo" width="20px">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -220,8 +297,20 @@
 
               <div class="details position-absolute w-75">
                 <div class="center">
-                  <h1>Someone famous<br><span>team leader</span></h1>
-                  <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                  <h1 class="fontColorGrey fontSixe19px fw-bold">Serenity in Motion</h1>
+                  <p style="word-break: break-all;">Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                  <h1 class="fontColorGrey fontSixe19px fw-bold pb-2">Follow Us On</h1>
+                  <div class="socialMediaIcons d-flex gap-4 justify-content-center">
+                    <div class="socialMediaIconsBox fbIcon">
+                      <img src="./assets/images/fbIcon.png" alt="facebook Logo" width="8.5px">
+                    </div>
+                    <div class="socialMediaIconsBox instaIcon ms-2">
+                      <img src="./assets/images/instaIcon.png" alt="instagram Logo" width="20px">
+                    </div>
+                    <div class="socialMediaIconsBox twitterIcon ms-2">
+                      <img src="./assets/images/twitterIcon.png" alt="twitter Logo" width="20px">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -240,8 +329,20 @@
 
               <div class="details position-absolute w-75">
                 <div class="center">
-                  <h1>Someone famous<br><span>team leader</span></h1>
-                  <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                  <h1 class="fontColorGrey fontSixe19px fw-bold">Serenity in Motion</h1>
+                  <p style="word-break: break-all;">Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                  <h1 class="fontColorGrey fontSixe19px fw-bold pb-2">Follow Us On</h1>
+                  <div class="socialMediaIcons d-flex gap-4 justify-content-center">
+                    <div class="socialMediaIconsBox fbIcon">
+                      <img src="./assets/images/fbIcon.png" alt="facebook Logo" width="8.5px">
+                    </div>
+                    <div class="socialMediaIconsBox instaIcon ms-2">
+                      <img src="./assets/images/instaIcon.png" alt="instagram Logo" width="20px">
+                    </div>
+                    <div class="socialMediaIconsBox twitterIcon ms-2">
+                      <img src="./assets/images/twitterIcon.png" alt="twitter Logo" width="20px">
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -295,15 +396,15 @@
           <div class="getInTouchForm pt-lg-5 pt-sm-4 px-sm-4">
             <form class="w-100 d-flex flex-column align-items-center px-sm-3">
               <div class="mb-4 w-100">
-                <input type="text" class=" w-100 formInputStyle" id="name" placeholder="Your Name">
+                <input type="text" class=" w-100 formInputStyle text-body-tertiary" id="name" placeholder="Your Name">
               </div>
               <div class="mb-4 w-100 pt-2">
-                <input type="text" class=" w-100 formInputStyle" id="gender" placeholder="Gender" >
+                <input type="text" class=" w-100 formInputStyle text-body-tertiary" id="gender" placeholder="Gender" >
               </div>
               <div class="mb-lg-4 mb-sm-3 w-100 pt-2 mb-4">
-                <textarea class=" pb-0 w-100 formInputStyle" placeholder="Messages" id="messages" rows="4"></textarea>
+                <textarea class=" pb-0 w-100 formInputStyle text-body-tertiary" placeholder="Messages" id="messages" rows="4"></textarea>
               </div>
-              <button type="submit" class="btnStyle bgPink border-0 fw-bold fontColorGrey">SEND MESSAGE</button>
+              <button class="btnStyle bgPink border-0 fw-bold fontColorGrey">SEND MESSAGE</button>
             </form>
           </div>
         </div>

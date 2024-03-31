@@ -160,10 +160,6 @@ footer,footer a{
     font-size: 20.4px;
 }
 
-
-
-
-
 /* to set the background images */
 .joinNowBrushImg{
     transform: translate(-14%, -16%);
@@ -284,7 +280,7 @@ button{
     z-index: 1;
 }
 
-button::before,button::after{
+.btnStyle::before,.btnStyle::after{
     position: absolute;
     content: "";
     height: 100%;
@@ -296,19 +292,19 @@ button::before,button::after{
     transition: all 0.5s;
 }
 
-button::before{
+.btnStyle::before{
     opacity: .5;
 }
   
-button::after{
+.btnStyle::after{
     transition-delay: .2s;
 }
   
-button:hover{
+.btnStyle:hover{
     color: #fff !important;
 }
   
-button:hover::before,button:hover::after{
+.btnStyle:hover::before,.btnStyle:hover::after{
     top: 0;
 }
 
@@ -316,6 +312,7 @@ button:hover::before,button:hover::after{
 .card{
     overflow: hidden;
     transition: .5s;
+    cursor: pointer;
 }
 
 .galeryCards:hover .card{
@@ -331,6 +328,7 @@ button:hover::before,button:hover::after{
     transition: .5s;
     transform-origin: left;
     transform: perspective(2000px) rotateY(-90deg);
+    cursor: pointer;
 }
 
 .galeryCards:hover .details{
