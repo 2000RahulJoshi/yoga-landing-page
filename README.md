@@ -33,6 +33,13 @@ Yoga Landing Page is a responsive web page that I have create for laptop, mobile
 1 - Click on the join now button and learn more button.
 
 
+## Screenshots
+
+![Landing Page](./assets/images/screenShotOne.png)
+![Program Section](./assets/images/screenShotThree.png)
+![Galery Section](./assets/images/screenShotTwo.png)
+![Footer](./assets/images/screenShotFive.png)
+
 # Clone this repositery in your local machine
 run the following command on your terminal(inside that folder where you want to clone the repo)
 
